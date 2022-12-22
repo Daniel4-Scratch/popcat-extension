@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html{overflow: hidden;}
+body{
+    width: 460px;
+    height: 550px;
+    font-family: 'Varela Round', sans-serif;
+    overflow: hidden;
+    background-color: #4F8BFF;
+    background-size: 60px 60px;
+
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+h1{
+    color: white;
+	font-size: 80px;
+    font-weight: 700;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 3;
+    position: relative;
+}
+
+#popcat{
+    width: 400px;
+    height: 450px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+div.popcat{
+    position: absolute; 
+bottom: 0;
+    margin: 0;
+   width:100%;
+   align-self: center;
+    z-index: 0;
+}
+
+#title{
+    width:300px
+}
+
+#popcat{-moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;}
+
+
+.options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width:230px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.options .title{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.options #close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+.options .option{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+button{
+    cursor: pointer;
+    z-index: 10;
+}
+input{
+    cursor: pointer;
+    z-index: 10;
+}
+
+@media (max-width:550px) { 
+    .options{
+        width:100%;
+        border-radius: 0;
+    }
+    #popcat{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+#opentab{
+    border-radius: 0px 0px 5px 0px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+#opentab img{
+    width: 18px;
+    height: 18px;
+}
